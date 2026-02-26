@@ -3,85 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart 2026 - I Am Golden</title>
+    <title>SMART 2026 – I AM GOLDEN</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .golden-gradient { background: linear-gradient(135deg, #FFD700 0%, #B8860B 100%); }
-        .text-golden { background: linear-gradient(to right, #FFD700, #DAA520); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero-bg { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/otter-ai/test/main/image_dc507c.jpg'); background-size: cover; background-position: center; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .golden-text { background: linear-gradient(to right, #FDE68A, #F59E0B, #B45309); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-golden { background: linear-gradient(135deg, #F59E0B 0%, #B45309 100%); transition: all 0.3s ease; }
+        .btn-golden:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(180, 83, 9, 0.4); }
+        .hero-overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-black text-white selection:bg-yellow-500 selection:text-black">
 
-    <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter text-golden">SMART 2026</div>
-            <a href="#register" class="golden-gradient text-white px-6 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition">ĐĂNG KÝ NGAY</a>
+    <nav class="fixed w-full z-50 bg-black/40 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tighter uppercase golden-text">Smart 2026</div>
+            <a href="https://tally.so/r/RG564l" target="_blank" class="btn-golden text-black px-6 py-2 rounded-full font-bold text-sm tracking-wide">THAM GIA NGAY</a>
         </div>
-    </header>
+    </nav>
 
-    <section class="h-screen flex items-center justify-center text-center px-6 hero-bg">
-        <div class="max-w-4xl">
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 uppercase tracking-tight">I Am Golden</h1>
-            <p class="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed font-light">
-                Trong thời đại Robot và AI, bạn chọn bị thay thế hay chọn trở thành <span class="text-yellow-400 font-semibold text-golden">Nhân vật then chốt (Key Person)</span>?
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <img src="images/main_image.png" alt="I Am Golden Hero" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-6xl md:text-8xl font-black mb-4 tracking-tighter uppercase">I AM <span class="golden-text">GOLDEN</span></h1>
+            <p class="text-xl md:text-2xl font-light text-gray-200 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Đừng để bị loại bỏ. Hãy trở thành <span class="text-yellow-400 font-bold italic">Key Person</span> trong kỷ nguyên Robot và AI.
             </p>
-            <a href="#about" class="inline-block border-2 border-yellow-500 text-yellow-500 px-10 py-4 rounded-full font-bold hover:bg-yellow-500 hover:text-white transition-all">KHÁM PHÁ NGAY</a>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-16">TẠI SAO BẠN CẦN CHÚNG TÔI?</h2>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition">
-                    <div class="w-16 h-16 golden-gradient rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">⚡</div>
-                    <h3 class="text-xl font-bold mb-4">Thách thức AI</h3>
-                    <p class="text-gray-600">Thế giới bùng nổ tri thức, Robot và AI đang thay đổi mọi quy luật cuộc chơi.</p>
-                </div>
-                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition">
-                    <div class="w-16 h-16 golden-gradient rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">💎</div>
-                    <h3 class="text-xl font-bold mb-4">Vàng Ròng</h3>
-                    <p class="text-gray-600">Khám phá năng lực tiềm ẩn để trở thành đối tượng không thể thiếu của thời đại.</p>
-                </div>
-                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition">
-                    <div class="w-16 h-16 golden-gradient rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">🤝</div>
-                    <h3 class="text-xl font-bold mb-4">Đồng hành</h3>
-                    <p class="text-gray-600">Chương trình Mentor giúp bạn định vị bản thân và xây dựng lộ trình sự nghiệp.</p>
-                </div>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#intro" class="border border-white/40 backdrop-blur-md px-10 py-4 rounded-full font-bold hover:bg-white hover:text-black transition">TÌM HIỂU THÊM</a>
+                <a href="https://tally.so/r/RG564l" target="_blank" class="btn-golden text-black px-10 py-4 rounded-full font-bold shadow-xl">ĐIỀN KHẢO SÁT</a>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-gray-900 text-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <img src="https://raw.githubusercontent.com/otter-ai/test/main/image_dc503f.jpg" alt="Mentors" class="rounded-3xl shadow-2xl">
+    <section id="intro" class="py-24 bg-white text-black">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative group">
+                <img src="images/on_desk.png" alt="Team Work" class="rounded-2xl shadow-2xl relative z-10">
+                <div class="absolute -bottom-4 -right-4 w-full h-full border-2 border-yellow-500 rounded-2xl z-0 transition-all group-hover:-bottom-2 group-hover:-right-2"></div>
             </div>
-            <div class="md:w-1/2">
-                <h2 class="text-4xl font-bold mb-6 italic">"Thế giới bắt đầu từ chính mình"</h2>
-                <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                    Đừng để 1 năm trôi qua mà năng lực của bạn vẫn đứng yên. Hãy để chúng tôi giúp bạn trả lời câu hỏi: Bạn là ai trong kỷ nguyên 2026?
+            <div>
+                <h2 class="text-4xl font-extrabold mb-8 tracking-tight uppercase leading-tight">Thời đại bùng nổ <br/><span class="text-yellow-600">tri thức mới</span></h2>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Robot, AI, vệ tinh... thế giới đang bước vào một kỷ nguyên vĩ đại. Làm thế nào để chúng ta trở thành đối tượng không thể thiếu của thời đại này?
                 </p>
-                <ul class="space-y-4">
-                    <li class="flex items-center">✅ Test MBTI đo mức độ trưởng thành</li>
-                    <li class="flex items-center">✅ Khảo sát 3 điểm mạnh cốt lõi</li>
-                    <li class="flex items-center">✅ Tư vấn lộ trình cá nhân hóa</li>
-                </ul>
+                <div class="bg-gray-50 p-8 rounded-2xl border-l-8 border-yellow-500 shadow-sm">
+                    <p class="italic font-medium text-gray-800 text-lg">"Thế giới xuất phát từ con người, con người bắt đầu từ chính mình."</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="register" class="py-24 text-center">
-        <div class="max-w-2xl mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-8">Sẵn sàng tỏa sáng?</h2>
-            <p class="text-gray-600 mb-12 italic text-lg">Chỉ mất 3 phút để thực hiện khảo sát và bắt đầu hành trình "I Am Golden" của bạn.</p>
-            <a href="URL_LINK_FORM_CỦA_BẠN_Ở_ĐÂY" target="_blank" class="golden-gradient text-white text-xl px-12 py-5 rounded-full font-bold shadow-2xl hover:scale-105 transition-transform inline-block">BẮT ĐẦU KHẢO SÁT NGAY</a>
-            <p class="mt-8 text-xs text-gray-400">© 2026 Smart 2026 – I am Golden Project. Toàn bộ thông tin được bảo mật.</p>
+    <section class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl font-extrabold mb-4 golden-text uppercase tracking-widest">Khai phá năng lực tiềm ẩn</h2>
+            <p class="text-gray-400 text-lg">Bạn và tôi, chúng ta cùng trở thành "Vàng Ròng".</p>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+            <div class="group relative overflow-hidden rounded-3xl aspect-video md:aspect-auto md:h-[500px]">
+                <img src="images/MBTI.png" alt="MBTI Test" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-10">
+                    <h3 class="text-3xl font-bold mb-3">Bài test MBTI ngắn gọn</h3>
+                    <p class="text-gray-300">Thử mức trưởng thành và khám phá phong cách riêng của bạn.</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-3xl aspect-video md:aspect-auto md:h-[500px]">
+                <img src="images/on_car.png" alt="Smart Team" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-10">
+                    <h3 class="text-3xl font-bold mb-3">Định vị điểm mạnh</h3>
+                    <p class="text-gray-300">Tìm ra 3 giá trị đặc biệt giúp bạn tiến bộ hơn chính mình của 1 năm trước.</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="py-24 bg-white text-black">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2 order-2 md:order-1">
+                <h2 class="text-4xl font-extrabold mb-6 tracking-tighter uppercase italic text-yellow-600 underline decoration-black decoration-4 underline-offset-8">Become the Pure Gold</h2>
+                <p class="text-xl text-gray-700 mb-8 leading-relaxed font-light italic">
+                    "Nếu bạn đột ngột vắng mặt, tổ chức sẽ rơi vào tình cảnh nào?"
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-5">
+                        <div class="w-10 h-10 rounded-xl bg-yellow-500 text-black flex items-center justify-center font-black shrink-0 shadow-lg">1</div>
+                        <p class="text-gray-600 font-medium">Khảo sát suy nghĩ và trải nghiệm thực tế cá nhân.</p>
+                    </div>
+                    <div class="flex items-start gap-5">
+                        <div class="w-10 h-10 rounded-xl bg-yellow-500 text-black flex items-center justify-center font-black shrink-0 shadow-lg">2</div>
+                        <p class="text-gray-600 font-medium">Đánh giá năng lực điều hành và phối hợp công việc.</p>
+                    </div>
+                    <div class="flex items-start gap-5">
+                        <div class="w-10 h-10 rounded-xl bg-yellow-500 text-black flex items-center justify-center font-black shrink-0 shadow-lg">3</div>
+                        <p class="text-gray-600 font-medium">Xác thực qua Facebook và kết nối Mentor trực tiếp.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 order-1 md:order-2">
+                <img src="images/boss.png" alt="Mentor Business" class="rounded-[2.5rem] shadow-2xl border-[12px] border-gray-50">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-zinc-950 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-yellow-500 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-amber-700 rounded-full blur-[120px]"></div>
+        </div>
+        <div class="relative z-10 px-6">
+            <h2 class="text-5xl md:text-7xl font-black mb-10 italic uppercase tracking-tighter leading-none">Bạn đã sẵn sàng để <br/><span class="golden-text">TỎA SÁNG?</span></h2>
+            <p class="text-gray-400 mb-12 max-w-xl mx-auto italic text-sm">🔒 Chương trình bảo mật thông tin và chỉ sử dụng Facebook để xác thực người tham gia.</p>
+            <a href="https://tally.so/r/RG564l" target="_blank" class="btn-golden text-black px-16 py-6 rounded-full font-black text-xl uppercase tracking-widest inline-block shadow-2xl scale-110">BẮT ĐẦU NGAY</a>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-white/5 text-gray-700 text-xs tracking-widest uppercase">
+        <p>© 2026 Smart 2026 – I am Golden Project</p>
+    </footer>
 
 </body>
 </html>
